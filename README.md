@@ -43,10 +43,11 @@ Run the script with python2.7.x:
 
     python2.7 sshconfigfs.py
 
-PS: you might need to run the script using admin rights, due to /etc/fuse.conf being a root file.
+PS: you might need to give read access to /etc/fuse.conf:
 
-    sudo python2.7 sshconfigfs.py
-    
+    sudo chmod 644 /etc/fuse.conf
+
+sshconfigfs needs no admin rights.
 
 ## Installation
 
