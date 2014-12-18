@@ -43,6 +43,11 @@ Run the script with python2.7.x:
 
     python2.7 sshconfigfs.py
 
+PS: you might need to run the script using admin rights, due to /etc/fuse.conf being a root file.
+
+    sudo python2.7 sshconfigfs.py
+    
+
 ## Installation
 
 On OSX, first install [osxfuse](https://osxfuse.github.io/) (if you're using Homebrew it's available with `brew install osxfuse`), then install the python requirements: `pip install -r requirements.txt` installs only *fusepy*.
