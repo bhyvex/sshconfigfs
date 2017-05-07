@@ -12,7 +12,42 @@ Python 2.7 and the [osxfuse](https://osxfuse.github.io/) package ([Fuse4X](http:
 
 ### Linux
 
-TODO
+You will need to install fusypy with pip, the alternative python package installer.
+
+#### Ubuntu/Linux Mint
+https://github.com/terencehonles/fusepy/issues/30
+
+First install pip:
+
+    sudo apt-get install python-pip
+
+Install wheel package using pip repo:
+
+    sudo pip install wheel
+
+Install fusepy package using pip repo:
+
+    sudo pip install fusepy
+
+OR
+
+Install fusepy package using github sources:
+
+    sudo pip install git+https://github.com/dsoprea/fusepy.git
+
+Setup fusepy with pip wheel:
+
+    sudo pip wheel fusepy
+
+Run the script with python2.7.x:
+
+    python2.7 sshconfigfs.py
+
+PS: you might need to give read access to /etc/fuse.conf:
+
+    sudo chmod 644 /etc/fuse.conf
+
+sshconfigfs needs no admin rights.
 
 ## Installation
 
